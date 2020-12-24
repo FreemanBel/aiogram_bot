@@ -4,13 +4,11 @@ menu = ReplyKeyboardMarkup(
     keyboard=[
 
         [
-            KeyboardButton(text='/token'),
-            KeyboardButton(text='/login'),
+            KeyboardButton(text='/start'),
+            KeyboardButton(text='/save'),
+            KeyboardButton(text='/posts'),
+        ],
 
-        ],
-        [
-            KeyboardButton(text="https://experts-community.herokuapp.com/posts/posts/"),
-        ],
     ],
     resize_keyboard=True
 )
