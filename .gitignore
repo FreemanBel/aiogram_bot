@@ -5,3 +5,4 @@ api.py
 config.py
 db.db
 test.py
+.env
