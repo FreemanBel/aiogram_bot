@@ -22,13 +22,13 @@ async def get_email(message: types.Message, state: FSMContext):
                 "username": username
             }
     )
-    await message.reply("Сообщение самоуничтожится через 2 секунды.")
+    await message.reply("Сообщение удалится через 2 секунды.")
     await asyncio.sleep(2)
     await message.delete()
     await message.answer("<b>username</b> зафиксирован в машине сосотояний.")
 
     await message.answer("Введите <b>password</b>\n"
-                         "и отправьте его буту!")
+                         "и отправьте его боту!")
     await UserData.next()
 
 
@@ -40,7 +40,7 @@ async def get_email(message: types.Message, state: FSMContext):
                 "password": password
             }
     )
-    await message.reply("Сообщение самоуничтожится через 2 секунды.")
+    await message.reply("Сообщение будет удалено через 2 секунды.")
     await asyncio.sleep(2)
     await message.delete()
     await message.answer("<b>password</b> зафиксирован в машине сосотояний.")
