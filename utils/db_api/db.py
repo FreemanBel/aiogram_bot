@@ -32,3 +32,4 @@ class DbConnect():
         c.execute('UPDATE USERS SET token=? WHERE user_id=?', (token, user_id))
         conn.commit()
 
+
