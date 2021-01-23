@@ -1,8 +1,8 @@
-from aiogram import types
 import asyncio
-import datetime
-from aiogram.dispatcher.storage import FSMContext
+
+from aiogram import types
 from aiogram.dispatcher.filters import Command
+from aiogram.dispatcher.storage import FSMContext
 
 from loader import dp
 from states import UserData
@@ -44,7 +44,6 @@ async def get_email(message: types.Message, state: FSMContext):
     await asyncio.sleep(2)
     await message.delete()
     await message.answer("<b>password</b> зафиксирован в машине сосотояний.")
-
 
     data = await state.get_data()
     username = data.get('username')

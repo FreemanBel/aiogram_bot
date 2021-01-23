@@ -27,12 +27,8 @@ class DbConnect():
                   )
         conn.commit()
 
-    def insert_token(self, conn, token: str):
+    def insert_token(self, conn, token: str, user_id: int):
         c = conn.cursor()
-        c.execute("""
-                    INSERT OR IGNORE INTO USERS (
-                    token
-                    ) VALUES (?)""",
-                  (token, )
+        c.execute('UPDATE USERS SET token=? WHERE user_id=?', (token, user_id))
+        conn.commit()
 
-                  )
