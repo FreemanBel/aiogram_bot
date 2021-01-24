@@ -1,4 +1,5 @@
 from .auth import dp
+from .read_posts import dp
 from .subscribe import dp
 from .get_posts import dp
 from .get_token import dp

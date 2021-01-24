@@ -31,7 +31,7 @@ async def show_channels(message: types.Message):
 
 @dp.callback_query_handler(text="check_subs")
 async def checker(call: types.CallbackQuery):
-    await call.answer()
+
     result = str()
     for channel in channels:
         status = await subscribe.check(user_id=call.from_user.id,
@@ -44,4 +44,4 @@ async def checker(call: types.CallbackQuery):
             result += (f"Подписка на канал <b>{channel.title}</b> не оформлена! "
                        f"<a href='{invite_link}'>Нужно подписаться.</a>\n\n")
 
-    await call.message.answer(result, disable_web_page_preview=False)
+    await call.message.answer(result, disable_web_page_preview=True)
