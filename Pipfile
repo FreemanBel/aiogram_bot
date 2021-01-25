@@ -16,6 +16,7 @@ python-dotenv = "*"
 litecli = "*"
 emoji = "*"
 python-telegram-bot-pagination = "*"
+apscheduler = "*"
 
 [requires]
 python_version = "3.8"

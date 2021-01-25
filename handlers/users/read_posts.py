@@ -4,10 +4,9 @@ from aiogram.types import CallbackQuery
 from .get_posts import get_posts
 from data.content import max_pages_book, book
 from keyboards.inline.pagination import get_page_keyboard, pagination_call
-from loader import dp
+from loader import dp, scheduler
 from utils.misc.pages import get_page
-
-
+from .get_posts import AllPosts
 
 
 @dp.message_handler(Command("book"))
@@ -28,4 +27,3 @@ async def show_chosen_page(call: CallbackQuery, callback_data: dict):
     text = get_page(book, page=current_page)
     markup = get_page_keyboard(max_pages=max_pages_book, page=current_page)
     await call.message.edit_text(text=text, reply_markup=markup)
-

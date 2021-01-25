@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "683454219032fe5f2d1900e032f9b4f6e44913386fc2a5d1f188ff223ec7dd8d"
+            "sha256": "1f3e3b4c57197a65ea22b931048686e819272d58b8792805a175b3f838087d12"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -80,6 +80,7 @@
                 "sha256:3bb5229eed6fbbdafc13ce962712ae66e175aa214c69bed35a06bffcf0c5e244",
                 "sha256:e8b1ecdb4c7cb2818913f766d5898183c7cb8936680710a4d3a966e02262e526"
             ],
+            "index": "pypi",
             "version": "==3.6.3"
         },
         "async-timeout": {
@@ -222,10 +223,11 @@
         },
         "emoji": {
             "hashes": [
-                "sha256:e42da4f8d648f8ef10691bc246f682a1ec6b18373abfd9be10ec0b398823bd11"
+                "sha256:153fbf06eb5a111ca2b0c04f6f14ec3be434946a302f7892bf4c30446e050381",
+                "sha256:87c934907deb25e9621b0c48cac2051ad932636ad5946c4de6ba0f5f45a61fcd"
             ],
             "index": "pypi",
-            "version": "==0.6.0"
+            "version": "==1.1.0"
         },
         "hiredis": {
             "hashes": [
@@ -348,11 +350,11 @@
         },
         "prompt-toolkit": {
             "hashes": [
-                "sha256:25c95d2ac813909f813c93fde734b6e44406d1477a9faef7c915ff37d39c0a8c",
-                "sha256:7debb9a521e0b1ee7d2fe96ee4bd60ef03c6492784de0547337ca4433e46aa63"
+                "sha256:7e966747c18ececaec785699626b771c1ba8344c8d31759a1915d6b12fad6525",
+                "sha256:c96b30925025a7635471dc083ffb6af0cc67482a00611bd81aeaeeeb7e5a5e12"
             ],
             "markers": "python_full_version >= '3.6.1'",
-            "version": "==3.0.8"
+            "version": "==3.0.14"
         },
         "pycparser": {
             "hashes": [
@@ -364,11 +366,11 @@
         },
         "pygments": {
             "hashes": [
-                "sha256:ccf3acacf3782cbed4a989426012f1c535c9a90d3a7fc3f16d231b9372d2b716",
-                "sha256:f275b6c0909e5dafd2d6269a656aa90fa58ebf4a74f8fcf9053195d226b24a08"
+                "sha256:bc9591213a8f0e0ca1a5e68a479b4887fdc3e75d0774e5c71c31920c427de435",
+                "sha256:df49d09b498e83c1a73128295860250b0b7edd4c723a32e9bc0d295c7c2ec337"
             ],
             "markers": "python_version >= '3.5'",
-            "version": "==2.7.3"
+            "version": "==2.7.4"
         },
         "pysocks": {
             "hashes": [

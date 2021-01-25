@@ -2,7 +2,7 @@ from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from aiogram.utils.callback_data import CallbackData
 
 pagination_call = CallbackData("paginator", "key", "page")
-show_item = CallbackData("show_item", "item_id")
+# show_item = CallbackData("show_item", "item_id")
 
 
 def get_page_keyboard(max_pages: int, key="book", page: int = 1):
@@ -13,6 +13,7 @@ def get_page_keyboard(max_pages: int, key="book", page: int = 1):
     previous_page_text = "<< "
 
     current_page_text = f"<{page}>"
+
 
     next_page = page + 1
     next_page_text = " >>"
