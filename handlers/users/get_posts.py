@@ -45,6 +45,8 @@ class AllPosts():
     def __init__(self, book=[]):
         self._book = book
 
+
+
     def get_all_posts(self):
         get = db.connect()
         user_id = env.int("ADMINS")
